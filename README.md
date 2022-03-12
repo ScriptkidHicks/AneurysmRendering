@@ -47,6 +47,7 @@ for the command line interface version. You will not necessarily need this, give
 ## Making a Movie
 
 ![using Visit](https://github.com/ScriptkidHicks/AneurysmRendering/blob/main/Images/visit.png)
+*A 0.03 section of pressure from the initial slide of the aneursyms data. A mesh, sliced on a bias, to demonstrate the rest of the artery*
 
   I used a combination of the command function in Visit, and the create movie function offered in the file dropdown. For creating movies directly from visit I would use [this script](https://github.com/ScriptkidHicks/AneurysmRendering/blob/main/Scripts/CameraRotationOnMesh.py). Special thanks to Hank Childs for information on how to use the script to make the camera fly around the body of the aneurysm while recording images. Once I had saved the images to the folder I had launched VisIt from, i used [this script](https://github.com/ScriptkidHicks/AneurysmRendering/blob/main/Scripts/ffmpegsave.py) to translate those images into a movie. The name of the movie / the name of the files could be used each time I made a different movie. It was also easy to execute these from the command function of VisIt, since it meant that I did not have to manually set up the conditions of the analysis in the code, but could instead leave that to be implicitly handled by the toolkit. 
   
