@@ -2,12 +2,19 @@
 
 
 [Details](#details)
+
 [Installation](#installation)
-    [Installing on Windows](#installing-on-windows)
-    [Installing on Linux](#installing-on-linux)
+
+[Installing on Windows](#installing-on-windows)    
+
+[Installing on Linux](#installing-on-linux)
+
 [Making a Movie](#making-a-movie)
+
 [Findings](#my-findings)
+
 [Sources](#sources)
+
 [Credits](#authors)
 
 ## Details
