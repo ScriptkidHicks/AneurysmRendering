@@ -46,6 +46,8 @@ for the command line interface version. You will not necessarily need this, give
 
 ## Making a Movie
 
+![using Visit](https://github.com/ScriptkidHicks/AneurysmRendering/blob/main/Images/visit.png)
+
   I used a combination of the command function in Visit, and the create movie function offered in the file dropdown. For creating movies directly from visit I would use [this script](https://github.com/ScriptkidHicks/AneurysmRendering/blob/main/Scripts/CameraRotationOnMesh.py). Special thanks to Hank Childs for information on how to use the script to make the camera fly around the body of the aneurysm while recording images. Once I had saved the images to the folder I had launched VisIt from, i used [this script](https://github.com/ScriptkidHicks/AneurysmRendering/blob/main/Scripts/ffmpegsave.py) to translate those images into a movie. The name of the movie / the name of the files could be used each time I made a different movie. It was also easy to execute these from the command function of VisIt, since it meant that I did not have to manually set up the conditions of the analysis in the code, but could instead leave that to be implicitly handled by the toolkit. 
   
   I also used the function in VisIt which allowed for saving directly to movie. This method allowed for easily taking videos of content, but limited my ability to navigate the camera around the object for the duration of the film, and also somewhat limited my ability to make videos of single index in time. 
@@ -53,7 +55,7 @@ for the command line interface version. You will not necessarily need this, give
   Once I had all the movie clips I needed (as well as several still images from a single point in time) I created a single ~3 minute video outlining my findings. The video was mixed together using Adobe Premier Pro (which I had access to through my job). I would estimate I put roughly 6 hours into cutting together clips, finding useful effects, and constructing a narrative.
   
 ## My findings
-
+![Findings intro image](https://github.com/ScriptkidHicks/AneurysmRendering/blob/main/Images/meshless.png)
 
 
 ### Sources
