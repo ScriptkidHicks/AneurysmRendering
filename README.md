@@ -62,10 +62,11 @@ I wanted to focus my research on the way that pressure interrelated with velocit
 
 This meant that it was difficult to isolate pressure fluctuations in the same way that I would velocity, using isovolumes. Given this, I decided to use three different approaches: tracking velocity, tracking integrated velocity, and using tight time slices to visualize pressure levels inside the aneursym during moments of high velocity / pressure.
 
-Tracking velocity was done in two ways. Firstly I used isovolumes, clamped to both high and low velocity. The high velocity isovolume, renderred inside a mesh, allowed me to visualize concentrations of high velocity inside the aneurysm, as well as give an indicator for where high pressures would occur. Low velocity isovolumes, using a selection clip tool to slice along the bias, allowed for visualization of how velocity changed over time from a different perspective.
+![Tracking pressure](https://github.com/ScriptkidHicks/AneurysmRendering/blob/main/Images/visit0200.png)
+Tracking velocity was done in two ways. Firstly I used isovolumes, clamped to both high and low velocity. The high velocity isovolume, renderred inside a mesh, allowed me to visualize concentrations of high velocity inside the aneurysm, as well as give an indicator for where high pressures would occur. Low velocity isovolumes, using a selection clip tool to slice along the bias, allowed for visualization of how velocity changed over time from a different perspective. This also gave me an opportunity to work with visualizations that involved doing different selections on overlapping renderings, to create a complete image, each part of which conveys different types of information.
 
-
-
+![A streamline image](https://github.com/ScriptkidHicks/AneurysmRendering/blob/main/Images/Streamline0008.png)
+Tracking integrated velocity was useful for visually rendering information about how velicity influenced the flow of objects through the artery and aneurysm. I generated my main visualization of this information through the streamline operator. The VisIt tutorial had a good guide on where to place the origin of the streamlines, though they used a very different style for the streamlines. I increased the number of streamlines for the video I created to ~4000, which caused the renderer to chug horribly, but did create a video which clearly indicated how particles would travel through the cell at each step of time, and how they would travel through the cell generall. I attempted to create a visualization of read or white blood cells traveling through the aneurysm, but the length of the streamline could not be clamped to anything below 0.3, and anything close to that range simply looked like a short line, which moved the point of its destination around at a pace difficult to comprehend for the viewer.
 
 ### Sources
 
