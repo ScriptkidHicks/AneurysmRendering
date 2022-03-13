@@ -58,6 +58,14 @@ for the command line interface version. You will not necessarily need this, give
 ## My findings
 ![Findings intro image](https://github.com/ScriptkidHicks/AneurysmRendering/blob/main/Images/meshless.png)
 
+I wanted to focus my research on the way that pressure interrelated with velocity, with a focus on the body of the aneurysm. One of the first things I found was that pressure occilated on an extremely short time scale, over wide ranges, and had with tight ranges for each time section. Each time slice was roughly 0.04 seconds in length, the pressure would undergo an average change off ~100-200 between two frames, and isolating a single slice of the pressure inside aneurysm body required isovolumes with ranges on the scale of 0.3 to 1.5. 
+
+This meant that it was difficult to isolate pressure fluctuations in the same way that I would velocity, using isovolumes. Given this, I decided to use three different approaches: tracking velocity, tracking integrated velocity, and using tight time slices to visualize pressure levels inside the aneursym during moments of high velocity / pressure.
+
+Tracking velocity was done in two ways. Firstly I used isovolumes, clamped to both high and low velocity. The high velocity isovolume, renderred inside a mesh, allowed me to visualize concentrations of high velocity inside the aneurysm, as well as give an indicator for where high pressures would occur. Low velocity isovolumes, using a selection clip tool to slice along the bias, allowed for visualization of how velocity changed over time from a different perspective.
+
+
+
 
 ### Sources
 
