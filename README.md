@@ -95,4 +95,5 @@ The range of pressure, from minimum to maximum, across the course of the entire 
 
 ### Authors
 Creator, editor: Tammas Hicks
+
 Contributors: Hank Childs, Patrick Thomasma (Special thanks for giving me some ideas about which direction to go with data processing)
