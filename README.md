@@ -17,7 +17,7 @@
 
 [Credits](#authors)
 
-You can find the final video I made [here](https://www.youtube.com/watch?v=rGB3E8xr6Ug&ab_channel=TammasHicks)
+You can find the final video I made [here](https://www.youtube.com/watch?v=rGB3E8xr6Ug&ab_channel=LillithHicks)
 
 ## Details
   This is a study I did on an aneurysm data set, using the VisIt toolkit, for my scienfitic visualization final project. I focused on pressure levels, velocity, integrated velocity, and the way that the two related to one another. Initially I had intended to put a greater emphasis on camera movement, but as time went on, I found that I was considerably more interested in what could be accomplished with the isovolume, streamline, and vector field tools which VisIt provides. You can find the scripts I used in the 'Scripts' folder. I have included a sample script because it was used repeatedly with slight variations for camera movement, and file name changes. Since these were moderately small changes, I did not upload relatively similar files. Credit for that code goes both to Hank Childs, and to the VisIt tutorial. I have not uploaded the video clips that I created, because they would easily exceed the limit that github imposes on file size.
@@ -71,7 +71,7 @@ The second way I tracked velocity was by using a vector field focused on velocit
 ![A streamline image](https://github.com/ScriptkidHicks/AneurysmRendering/blob/main/Images/Streamline0008.png)
 Tracking integrated velocity was useful for visually rendering information about how velicity influenced the flow of objects through the artery and aneurysm. I generated my main visualization of this information through the streamline operator. The VisIt tutorial had a good guide on where to place the origin of the streamlines, though they used a very different style for the streamlines. I increased the number of streamlines for the video I created to ~4000, which caused the renderer to chug horribly, but did create a video which clearly indicated how particles would travel through the cell at each step of time, and how they would travel through the cell generall. I attempted to create a visualization of read or white blood cells traveling through the aneurysm, but the length of the streamline could not be clamped to anything below 0.3, and anything close to that range simply looked like a short line, which moved the point of its destination around at a pace difficult to comprehend for the viewer.
 
-The integrated streamline visualization did give some important information about the movement of objects wthin the aneurysm though. As I note in [the video](https://www.youtube.com/watch?v=rGB3E8xr6Ug&ab_channel=TammasHicks) the particles accelerate as they approach the top of the aneurysm, and circle towards the center. This resulted in VisIt throwing an error, refering to particles in the advection field circling endlessly around the same point, and entering an endless loop. This is interesting because I think it draws attention to the ways in which our massless, volume-less particles differ from real particles. Obviously this is not a phenomena that would occur in real life, given that particles would jostle and push one another out of the way.
+The integrated streamline visualization did give some important information about the movement of objects wthin the aneurysm though. As I note in [the video](https://www.youtube.com/watch?v=rGB3E8xr6Ug&ab_channel=LillithHicks) the particles accelerate as they approach the top of the aneurysm, and circle towards the center. This resulted in VisIt throwing an error, refering to particles in the advection field circling endlessly around the same point, and entering an endless loop. This is interesting because I think it draws attention to the ways in which our massless, volume-less particles differ from real particles. Obviously this is not a phenomena that would occur in real life, given that particles would jostle and push one another out of the way.
 
 In my visualization of streamlines, as you can see above, I clamped the range between 0 and 2.0. The velocity scale, over the time of the simulation, ranges from 0 to 40, and most of the values occur from 0 to 5. For the integrated velocity values, we see most of the values occuring between 0 and 2, or slightly above. Clamping the display increases color contrast, which better allows us to visualize differences in speed, but also allows us to focus on where most of the information is. Similarly, if we wanted to study outliers, we could clamp the range to the highest levels. This focus on clamping the range is something I will revisit in the next part about visualization of pressure.
 
@@ -94,6 +94,6 @@ The range of pressure, from minimum to maximum, across the course of the entire 
 [The script you will need for installing VisIt on linux](https://visit-dav.github.io/visit-website/releases-as-tables/#series-32)
 
 ### Authors
-Creator, editor: Tammas Hicks
+Creator, editor: Lillith Hicks
 
 Contributors: Hank Childs, Patrick Thomasma (Special thanks for giving me some ideas about which direction to go with data processing)
